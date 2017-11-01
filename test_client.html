@@ -5,17 +5,22 @@
   <title>Client</title>
 </head>
 <body>
-  <h1>Best approximation (No external javascript, only FFServer running)</h1>
-  <video style="background-color: black;" width="480" height="270" autoplay is-live preload="none">
-      <source src="http://10.1.2.154:8090/test.webm" type="video/webm" />
+  <h1> Webm then h264 </h1>
+  <video style="background-color: black;" width="480" height="270" autoplay preload="none">
+      <source src="http://10.1.2.154:8090/test.webm" type="video/mp4" />
+      <source src="http://10.1.2.154:8090/test.mpeg" type="video/m4v" />
       HTML5 video not supported.
   </video>
-  <br/>
-<h1>Other options (either Javascript dependencies or node/extra software running)</h1>
-  <video style="background-color: black;" width="480" height="270" autoplay is-live preload="none">
-      <source src="http://10.1.2.154:8090/test.mpeg" type="video/h264" />
+  <h1> Only h264 </h1>
+  <video style="background-color: black;" width="480" height="270"  autoplay preload="none">
+      <source src="http://10.1.2.154:8090/test.mpeg" type="video/m4v" />
       HTML5 video not supported.
   </video>
-<br/>
+  <h1> Online demo video, webm then mp4 </h1>
+  <video class="video-background" preload="none" loop="loop" autoplay>
+     <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/mp4">
+     <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+  </video>
 </body>
 </html>
